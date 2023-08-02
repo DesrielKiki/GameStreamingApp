@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/iv_streamerPhoto"
+        android:layout_width="@dimen/_48sdp"
+        android:layout_height="@dimen/_48sdp"
+        android:layout_marginTop="@dimen/_11sdp"
+        android:src="@drawable/michael_wagner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearance="@style/RoundedImage8dp" />
+
+    <TextView
+        android:id="@+id/tv_streamerName"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_21sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Michael Wagner"
+        android:textColor="@color/neutral_80"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintStart_toEndOf="@+id/iv_streamerPhoto"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/iv_show"
+        android:layout_width="@dimen/_13sdp"
+        android:layout_height="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_21sdp"
+        android:layout_marginTop="@dimen/_3sdp"
+        android:src="@drawable/show"
+        app:layout_constraintStart_toEndOf="@+id/iv_streamerPhoto"
+        app:layout_constraintTop_toBottomOf="@+id/tv_streamerName" />
+
+    <TextView
+        android:id="@+id/tv_views"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_15sdp"
+        android:layout_marginStart="@dimen/_7sdp"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:textSize="@dimen/_10ssp"
+        android:textColor="@color/neutral_50"
+        android:text="10k Views"
+        android:fontFamily="@font/poppins"
+        app:layout_constraintStart_toEndOf="@+id/iv_show"
+        app:layout_constraintTop_toBottomOf="@+id/tv_streamerName" />
+
+    <ImageView
+        android:id="@+id/iv_likes"
+        android:layout_width="@dimen/_13sdp"
+        android:layout_height="@dimen/_13sdp"
+        android:layout_marginStart="@dimen/_7sdp"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:src="@drawable/heart"
+        app:layout_constraintStart_toEndOf="@+id/tv_views"
+        app:layout_constraintTop_toBottomOf="@+id/tv_streamerName" />
+
+    <TextView
+        android:id="@+id/tv_likes"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_15sdp"
+        android:textSize="@dimen/_10sdp"
+        android:fontFamily="@font/poppins"
+        android:textColor="@color/neutral_50"
+        android:layout_marginStart="@dimen/_7sdp"
+        android:layout_marginTop="@dimen/_1sdp"
+        android:text="5k Likes"
+        app:layout_constraintStart_toEndOf="@+id/iv_likes"
+        app:layout_constraintTop_toBottomOf="@+id/tv_streamerName" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

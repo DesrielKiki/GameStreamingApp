@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="Desriel.streamingApp.HomeActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/ellipse"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_24sdp"
+        android:layout_marginStart="@dimen/_21sdp"
+        android:layout_marginTop="@dimen/_73sdp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Welcome, John!"
+        android:textColor="@color/neutral_80"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/Profile"
+        android:layout_width="@dimen/_40sdp"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_65sdp"
+        android:layout_marginEnd="@dimen/_21sdp"
+        android:src="@drawable/mohammadreza"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/Categories"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_21sdp"
+        android:layout_marginTop="@dimen/_29sdp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Game Categories"
+        android:textSize="@dimen/_16ssp"
+        android:textColor="@color/neutral_black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/see_moreCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_21sdp"
+        android:layout_marginTop="@dimen/_31sdp"
+        android:layout_marginEnd="@dimen/_31sdp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="See more"
+        android:textColor="@color/primary_50"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/Categories"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_category_home"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:layout_marginStart="@dimen/_21sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Categories"
+        tools:listitem="@layout/row_category_home" />
+
+    <TextView
+        android:id="@+id/Trending"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_24sdp"
+        android:layout_marginStart="@dimen/_21sdp"
+        android:layout_marginTop="@dimen/_17sdp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Trending Now"
+        android:textSize="@dimen/_16ssp"
+        android:textColor="@color/neutral_black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rv_category_home" />
+
+    <TextView
+        android:id="@+id/see_moreTrending"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_21sdp"
+        android:layout_marginTop="@dimen/_19sdp"
+        android:layout_marginEnd="@dimen/_31sdp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="See more"
+        android:textColor="@color/primary_50"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rv_category_home" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_trend"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_190sdp"
+        android:layout_marginStart="@dimen/_21sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Trending"
+        tools:listitem="@layout/row_game" />
+
+    <TextView
+        android:id="@+id/recomended"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_21sdp"
+        android:layout_marginTop="@dimen/_26sdp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Recommended For You"
+        android:textColor="@color/neutral_black"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rv_trend" />
+
+    <TextView
+        android:id="@+id/see_moreRecomended"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_21sdp"
+        android:layout_marginTop="@dimen/_28sdp"
+        android:layout_marginEnd="@dimen/_31sdp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="See more"
+        android:textColor="@color/primary_50"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rv_trend"
+        app:layout_goneMarginEnd="@dimen/_31sdp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_recom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_190sdp"
+        android:layout_marginStart="@dimen/_21sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="@dimen/_91sdp"
+        app:layout_constraintTop_toBottomOf="@+id/recomended"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:listitem="@layout/row_game" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

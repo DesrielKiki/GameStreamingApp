@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Game Streaming App</string>
+    <string name="socialMedia">Social Media\nand Streaming\nfor Gamers</string>
+    <string name="welcome_to_twitch">Welcome to Twitch</string>
+    <string name="alreadyHave">Already have an account ?</string>
+    <string name="sign_in">Sign in</string>
+</resources>

@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/ellipse"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/twich_logo"
+        android:layout_width="@dimen/_244sdp"
+        android:layout_height="@dimen/_137sdp"
+        android:layout_marginStart="@dimen/_75sdp"
+        android:layout_marginTop="@dimen/_58sdp"
+        android:layout_marginBottom="@dimen/_573sdp"
+        android:layout_marginEnd="@dimen/_56sdp"
+        android:src="@drawable/twitch_app_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_41sdp"
+        android:layout_marginTop="@dimen/_34sdp"
+       android:fontFamily="@font/poppins_semibold"
+        android:text="Welcome to Twitch!"
+        android:textColor="@color/neutral_80"
+        android:textSize="@dimen/_16ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/twich_logo" />
+
+    <TextView
+        android:id="@+id/tv_socialMedia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_41sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:layout_marginEnd="@dimen/_39sdp"
+        android:fontFamily="@font/poppins_light"
+        android:text="Social Media\nand Streaming\nfor Gamers"
+        android:textColor="@color/primary_50"
+        android:textSize="@dimen/_32ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_welcome" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_26sdp"
+        android:layout_marginEnd="@dimen/_40sdp"
+        android:backgroundTint="@color/primary_50"
+        android:fontFamily="@font/poppins_medium"
+        android:paddingStart="@dimen/_32sdp"
+        android:paddingTop="@dimen/_16sdp"
+        android:paddingEnd="@dimen/_32sdp"
+        android:paddingBottom="@dimen/_16sdp"
+        android:text="Sign Up"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_16ssp"
+        app:cornerRadius="@dimen/_8sdp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_socialMedia" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_skip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_40sdp"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:background="@drawable/buttonskip"
+        android:text="skip"
+        android:paddingStart="@dimen/_32sdp"
+        android:paddingEnd="@dimen/_32sdp"
+        android:textAlignment="center"
+        android:textSize="@dimen/_16ssp"
+        android:fontFamily="@font/poppins_medium"
+        app:cornerRadius="@dimen/_8sdp"
+        android:textColor="@color/primary_50"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_signup" />
+
+    <TextView
+        android:id="@+id/already_hav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginStart="@dimen/_67sdp"
+        android:layout_marginEnd="@dimen/_120sdp"
+        android:fontFamily="@font/poppins"
+        android:text="@string/alreadyHave"
+        android:textColor="@color/neutral_80"
+        android:textSize="@dimen/_14sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_skip" />
+
+    <TextView
+        android:id="@+id/sign_in"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_21sdp"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="@string/sign_in"
+        android:textColor="@color/primary_50"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintStart_toEndOf="@+id/already_hav"
+        app:layout_constraintTop_toBottomOf="@+id/btn_skip" />
+
+    <TextView
+        android:id="@+id/or_login_wi"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_21sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:fontFamily="@font/poppins"
+        android:layout_marginStart="@dimen/_144sdp"
+        android:text="Or login with"
+        android:layout_marginEnd="@dimen/_144sdp"
+        android:textColor="@color/neutral_80"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/already_hav" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/or_login_wi"
+
+        android:layout_centerInParent="true"
+        android:layout_marginStart="@dimen/_40sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_42sdp"
+        android:layout_marginBottom="@dimen/_55sdp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/or_login_wi">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="@dimen/_87sdp"
+            android:layout_height="@dimen/_56sdp"
+            android:background="@drawable/button_login"
+            android:src="@drawable/logos_google"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_weight="1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:layout_width="@dimen/_87sdp"
+            android:layout_height="@dimen/_56sdp"
+            android:background="@drawable/button_login"
+            android:layout_marginLeft="@dimen/_16sdp"
+            android:src="@drawable/logos_facebook"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_weight="1"
+            app:layout_constraintStart_toEndOf="@+id/imageButton" />
+
+        <ImageButton
+            android:layout_width="@dimen/_87sdp"
+            android:layout_height="@dimen/_56sdp"
+            android:background="@drawable/button_login"
+            android:src="@drawable/logos_twitter"
+            android:layout_marginLeft="@dimen/_16sdp"
+            tools:layout_editor_absoluteX="204dp"
+            android:layout_weight="1"
+            tools:layout_editor_absoluteY="-23dp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
